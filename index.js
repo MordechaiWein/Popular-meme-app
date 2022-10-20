@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", getMemes())
+document.addEventListener("DOMContentLoaded",
+ MemeList() ,
+ formInput()
+  )
 
-function getMemes() {
+function MemeList() {
     fetch("https://api.imgflip.com/get_memes")
     .then (response => response.json())
     .then (data => {
@@ -12,13 +15,25 @@ function getMemes() {
      const li = document.createElement('li')
      ul.appendChild(li)
      li.innerText = meme.name
-   })
-   
-   
-  
-     })
-    
+    })
+    })
     }
-            
+         
+    function formInput(){
+    const form = document.querySelector("form")
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const ul = document.querySelector('ul')
+        ul.innerHTML = ""
+        fetch(`https://api.imgflip.com/get_memes${}`)
+        .then(response => response.json())
+        .then(data => {console.log(data)})
+
+    })
+    
+
+}
+
+
     
     
