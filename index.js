@@ -27,14 +27,13 @@ function MemeList() {
             div.appendChild(image)
             h2.innerText = meme.name
             image.src = meme.url
-            div.addEventListener('click',() => {
-            div.innerText=""
-            })
+            div.addEventListener('click',() => div.innerText="" )
           })
         })
       })
     })
    }
+
 
 function formInput() {
     const form = document.querySelector("form")
