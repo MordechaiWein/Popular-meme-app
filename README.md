@@ -4,5 +4,9 @@
 
 Hello, my name is Mordechai Wein. Here I have created the Popular Meme Application. The application incorporates HTML, CSS and Javascript to create an interactive and lively experience.    
 
-## How to use the app
+## Explaining my JavaScript code
+
+
+
+
 
