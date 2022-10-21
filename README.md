@@ -6,7 +6,7 @@ Hello, my name is Mordechai Wein. Here I have created the Popular Meme Applicati
 
 ## Explaining my JavaScript code
 
-
+I use a fetch request to GET the Memes API.
 
 
 
