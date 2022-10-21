@@ -2,4 +2,4 @@
 
  ## Introduction
 
-Hello, my name is Mordechai Wein.
+Hello, my name is Mordechai Wein. Here I have created the Popular Meme Application.
