@@ -14,5 +14,6 @@ Each individual Li’s inner text is set to the meme’s name
 
 When each Li tag is clicked the meme and its name are displayed on the page. Specifically -
 - I render all the Li’s into an array
+- I iterate through the array adding a click event to each Li tag
 
 
