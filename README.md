@@ -31,4 +31,4 @@ I created a form for individuals to add their own memes to the page. Specificall
 
 ## Credit 
 
-Credit is due to Flatiron school for its Toy Tale lab from which I adapted their HTML form, certain CSS, and certain ideas for my project......
+Credit is due to Flatiron school for its Toy Tale lab from which I adapted their HTML form, certain CSS, and certain ideas for my project.
