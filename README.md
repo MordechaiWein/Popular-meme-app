@@ -28,3 +28,7 @@ I created a form for individuals to add their own memes to the page. Specificall
 - The image tag’s source is set to the second input bar’s value
 - The form then resets 
 - I add a click event to the div that empties out the divs inner text and erases the image from the screen
+
+## Credit 
+
+Credit is due to Flatiron school for its Toy Tale lab from which I adapted their HTML form, certain CSS, and certain ideas for my project.
