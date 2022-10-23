@@ -21,3 +21,10 @@ When each Li tag is clicked the meme and its name are displayed on the page. Spe
 - I add a click event to the div that empties out the divs inner text and erases the meme from the screen
 
 I created a form for individuals to add their own memes to the page. Specifically- 
+- I add a submit event to my form which has two input bars
+- I prevent the submit event’s default behavior
+- When the form is submitted an H2 and an Image tag are created and appended to a div tag 
+- The H2 tag’s inner text is set to the first input bar’s value
+- The image tag’s source is set to the second input bar’s value
+- The form then resets 
+- I add a click event to the div that empties out the divs inner text and erases the image from the screen
