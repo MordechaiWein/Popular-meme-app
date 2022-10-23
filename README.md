@@ -7,6 +7,7 @@ Hello, my name is Mordechai Wein. I have created a Popular Meme Application. The
 ## Description 
 
 After the DOM has loaded I use a fetch request to GET the Memes API
+I render all the Memes into an array
 
 
 
