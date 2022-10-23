@@ -9,5 +9,6 @@ Hello, my name is Mordechai Wein. I have created a Popular Meme Application. The
 After the DOM has loaded I use a fetch request to GET the Memes API
 I render all the Memes into an array
 I then iterate through the array creating individual memes 
+For each meme a Li tag is created and appended to a Ul tag
 
 
