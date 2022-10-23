@@ -16,4 +16,5 @@ When each Li tag is clicked the meme and its name are displayed on the page. Spe
 - I render all the Li’s into an array
 - I iterate through the array adding a click event to each Li tag
 - When each Li tag is clicked an H2 and an Image tag are created and appended to a div tag 
+- Each H2 tag’s inner text is set to the memes name
 
