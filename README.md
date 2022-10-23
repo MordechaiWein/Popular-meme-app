@@ -18,4 +18,4 @@ When each Li tag is clicked the meme and its name are displayed on the page. Spe
 - When each Li tag is clicked an H2 and an Image tag are created and appended to a div tag 
 - Each H2 tag’s inner text is set to the memes name
 - Each image tag’s source is set to the memes url
-
+- I add a click event to the div that empties out the divs inner text and erases the meme from the screen
