@@ -12,4 +12,6 @@ I then iterate through the array creating individual memes
 For each meme a Li tag is created and appended to a Ul tag
 Each individual Li’s inner text is set to the meme’s name
 
+When each Li tag is clicked the meme and its name are displayed on the page. Specifically -
+
 
