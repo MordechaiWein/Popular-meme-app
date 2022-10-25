@@ -16,30 +16,16 @@ function memeList() {
        ul.appendChild(li)
        li.innerText = meme.name
 
-          li.addEventListener('click', () => {
-           const div = document.querySelector("div")
-           const h2 =  document.createElement('h2')
-           const image = document.createElement('img')
-            div.appendChild(h2)
-            div.appendChild(image)
-            h2.innerText = meme.name
-            image.src = meme.url
-            div.addEventListener('click',() => div.innerText="" )
-          })
-         // const liArray = []
-    // liArray.push(li)
-    // liArray.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //        const div = document.querySelector("div")
-    //        const h2 =  document.createElement('h2')
-    //        const image = document.createElement('img')
-    //         div.appendChild(h2)
-    //         div.appendChild(image)
-    //         h2.innerText = meme.name
-    //         image.src = meme.url
-    //         div.addEventListener('click',() => div.innerText="" )
-    //       })
-    //     })
+       li.addEventListener('click', () => {
+       const div = document.querySelector("div")
+       const h2 =  document.createElement('h2')
+       const image = document.createElement('img')
+       div.appendChild(h2)
+       div.appendChild(image)
+       h2.innerText = meme.name
+       image.src = meme.url
+       div.addEventListener('click',() => div.innerText="" )
+        })
       })
     })
    }
