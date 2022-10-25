@@ -16,6 +16,7 @@ function memeList() {
        ul.appendChild(li)
        li.innerText = meme.name
 
+       
        li.addEventListener('click', () => {
        const div = document.querySelector("div")
        const h2 =  document.createElement('h2')
@@ -59,5 +60,4 @@ function formInput() {
       
 
     
-
-    
+   
