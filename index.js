@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded",
-  MemeList() ,
+  memeList() ,
   formInput() 
 )
 
 
-function MemeList() {
+function memeList() {
     fetch("https://api.imgflip.com/get_memes")
     .then (response => response.json())
     .then (data => {
@@ -16,10 +16,7 @@ function MemeList() {
        ul.appendChild(li)
        li.innerText = meme.name
 
-    const liArray = []
-    liArray.push(li)
-    liArray.forEach(item => {
-        item.addEventListener('click', () => {
+          li.addEventListener('click', () => {
            const div = document.querySelector("div")
            const h2 =  document.createElement('h2')
            const image = document.createElement('img')
@@ -29,7 +26,20 @@ function MemeList() {
             image.src = meme.url
             div.addEventListener('click',() => div.innerText="" )
           })
-        })
+         // const liArray = []
+    // liArray.push(li)
+    // liArray.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //        const div = document.querySelector("div")
+    //        const h2 =  document.createElement('h2')
+    //        const image = document.createElement('img')
+    //         div.appendChild(h2)
+    //         div.appendChild(image)
+    //         h2.innerText = meme.name
+    //         image.src = meme.url
+    //         div.addEventListener('click',() => div.innerText="" )
+    //       })
+    //     })
       })
     })
    }
