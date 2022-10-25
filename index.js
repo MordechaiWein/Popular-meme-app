@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded",
 function memeList() {
     fetch("https://api.imgflip.com/get_memes")
     .then (response => response.json())
-    .then (data => {
-       data.data.memes.forEach(meme => {
+    .then (object => {
+       object.data.memes.forEach(meme => {
        const ul = document.querySelector('ul')
        const li = document.createElement('li')
        ul.appendChild(li)
