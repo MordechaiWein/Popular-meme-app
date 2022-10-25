@@ -7,10 +7,10 @@ Hello, my name is Mordechai Wein. I have created a Popular Meme Application. The
 ## Description 
 
 After the DOM has loaded I use a fetch request to GET the Memes API
-I tap into the memes array nested in an outer object using dot notation
-I then iterate through the array creating individual memes 
-For each meme a Li tag is created and appended to a Ul tag
-Each individual Li’s inner text is set to the meme’s name
+- I tap into the memes array nested in an outer object using dot notation
+- I then iterate through the array creating individual memes 
+- For each meme a Li tag is created and appended to a Ul tag
+- Each individual Li’s inner text is set to the meme’s name
 
 When each Li tag is clicked the meme and its name are displayed on the page. Specifically -
 - I add a click event to the Li variable 
