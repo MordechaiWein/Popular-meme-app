@@ -8,15 +8,12 @@ function memeList() {
     fetch("https://api.imgflip.com/get_memes")
     .then (response => response.json())
     .then (data => {
-       const convertedArray = []
-       convertedArray.push(data)
-       convertedArray[0].data.memes.forEach(meme => {
+       data.data.memes.forEach(meme => {
        const ul = document.querySelector('ul')
        const li = document.createElement('li')
        ul.appendChild(li)
-       li.innerText = meme.name
+       li.innerText = meme.name                                        
 
-       
        li.addEventListener('click', () => {
        const div = document.querySelector("div")
        const h2 =  document.createElement('h2')
