@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded",
-  memeList() ,
+document.addEventListener("DOMContentLoaded", () => {
+  memeList()
   formInput()
-)
+})
 
 
 function memeList() {
@@ -13,51 +13,48 @@ function memeList() {
       const li = document.createElement('li')
       ul.appendChild(li)
       li.innerText = meme.name
-      
       memeDisplay(meme,li)                               
-       })
-     })
-    }
+    })
+ })
+}
 
-    
+   
+function appendElements(argument1, argument2) {
+  const div = document.querySelector("div")
+  const h2 =  document.createElement('h2')
+  const image = document.createElement('img')
+  div.appendChild(h2)
+  div.appendChild(image)
+  h2.innerText = argument1
+  image.src = argument2
+  div.addEventListener('click',() => div.innerText= "" )
+}
+
+
 function memeDisplay(meme,li) {
   li.addEventListener('click', () => {
-    const div = document.querySelector("div")
-    const h2 =  document.createElement('h2')
-    const image = document.createElement('img')
-    div.appendChild(h2)
-    div.appendChild(image)
-    h2.innerText = meme.name
-    image.src = meme.url
-    div.addEventListener('click',() => div.innerText= "" )
-     })
-    }
+    appendElements(meme.name, meme.url)
+  })
+}
     
 
 function formInput() {
   const form = document.querySelector("form")
   form.addEventListener('submit', (e) => {
     e.preventDefault()
-    const div = document.querySelector("div")
-    const h2 =  document.createElement('h2')
-    const image = document.createElement('img')
-    div.appendChild(h2)
-    div.appendChild(image)
     const firstForm = document.querySelector("#first-form")
     const secondForm = document.querySelector("#second-form")
-    h2.innerText = firstForm.value
-    image.src = secondForm.value
+    appendElements(firstForm.value, secondForm.value)
     form.reset()
-    div.addEventListener('click',() => div.innerText= "" )
-   })
- }
+  })
+}
 
-    
 
-    
-       
+
+
   
-      
+ 
+
 
     
    
