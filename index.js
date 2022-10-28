@@ -19,14 +19,14 @@ function memeList() {
 }
 
    
-function appendElements(argument1, argument2) {
+function appendElements(memeName, memeUrl) {
   const div = document.querySelector("div")
   const h2 =  document.createElement('h2')
   const image = document.createElement('img')
   div.appendChild(h2)
   div.appendChild(image)
-  h2.innerText = argument1
-  image.src = argument2
+  h2.innerText = memeName
+  image.src = memeUrl
   div.addEventListener('click',() => div.innerText= "" )
 }
 
